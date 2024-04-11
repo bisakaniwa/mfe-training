@@ -29,7 +29,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
 // If running in development and in isolation, call mount immediately
 // Simplest of js to be able to communicate w/ diff frameworks
 if (process.env.NODE_ENV === 'development') {
-    const devRoot = document.querySelector('#_marketing-dev-root');
+    const devRoot = document.querySelector('#_auth-dev-root');
 
     if (devRoot) {
         mount(devRoot, { defaultHistory: createBrowserHistory() });
