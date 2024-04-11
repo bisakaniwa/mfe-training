@@ -1,7 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createMemoryHistory, createBrowserHistory } from 'history';
-import App from './App';
+import { createApp } from 'vue';
+import Dashboard from './components/Dashboard.vue';
 
 // Mount function to start the app
 const mount = (el, { onSignIn, onNavigate, defaultHistory, initialPath }) => {
