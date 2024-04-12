@@ -5,7 +5,7 @@ import Progress from './components/Progress'
 import Header from './components/Header';
 // import MarketingApp from './components/MarketingApp';
 
-const MarketingLazy = lazy(() => import('./components/MarketingApp '));
+const MarketingLazy = lazy(() => import('./components/MarketingApp'));
 const AuthLazy = lazy(() => import('./components/AuthApp'));
 
 const generateClassName = createGenerateClassName({
@@ -25,7 +25,7 @@ export default () => {
                             <Route path="/auth">
                                 <AuthLazy onSignIn={() => setIsSignedIn(true)} />
                             </Route>
-                            <Route path="/" component={MarketingApp} />
+                            <Route path="/" component={MarketingLazy} />
                         </Switch>
                     </Suspense>
                 </div>
